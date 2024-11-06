@@ -13,10 +13,6 @@
       rel="stylesheet"
     />
     <style>
-      body {
-        margin: 0;
-        padding: 0;
-      }
       .font-roboto {
         font-family: "Roboto", sans-serif;
       }
@@ -26,10 +22,12 @@
     </style>
   </head>
   <body>
-    <header class="bg-[#FFFBF0]">
-      <nav class="flex justify-between items-center mx-40 my-6">
+    <header class="bg-[#FFFBF0] pb-10">
+      <nav
+        class="flex flex-col md:flex-row justify-center md:justify-between items-center mx-2 md:mx-10 lg:mx-40 my-1 md:my-3 lg:my-6"
+      >
         <img class="inline h-10" src="src/icons/logo.png" alt="logo" />
-        <ul class="inline flex gap-x-12 font-roboto">
+        <ul class="flex gap-x-12 md:gap-x-6 font-roboto">
           <li><a href="#">Home</a></li>
           <li><a href="#">Product</a></li>
           <li><a href="#">About us</a></li>
@@ -37,14 +35,16 @@
         </ul>
       </nav>
       <!-- banner section  -->
-      <section class="mx-40 flex justify-center items-center">
-        <div class="w-1/2">
+      <section
+        class="mx-2 md:mx-10 lg:mx-40 md:flex md:flex-row justify-center items-center"
+      >
+        <div class="w-full md:w-1/2 text-center md:text-left">
           <h1 class="uppercase text-6xl font-bebas mb-2">
             <span class="text-[#FABE4C]">Be the penguins</span>
             <br />
             <span class="text-[#363958]">of winter</span>
           </h1>
-          <p class="font-roboto mb-2">
+          <p class="font-roboto mb-2 mx-16 md:mx-auto">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
             cupiditate doloribus consequatur.
           </p>
@@ -68,8 +68,8 @@
             buy now
           </button>
         </div>
-        <div class="w-1/2">
-          <img src="src/images/model.png" alt="" />
+        <div class="w-full md:w-1/2 flex justify-center">
+          <img src="src/images/model.png" alt="" class="block w-2/3" />
         </div>
       </section>
     </header>
