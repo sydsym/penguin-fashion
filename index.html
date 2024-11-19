@@ -13,6 +13,10 @@
       rel="stylesheet"
     />
     <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
       .font-roboto {
         font-family: "Roboto", sans-serif;
       }
@@ -24,7 +28,7 @@
   <body>
     <header class="bg-[#FFFBF0] pb-10">
       <nav
-        class="flex flex-col md:flex-row justify-center md:justify-between items-center mx-2 md:mx-10 lg:mx-40 my-1 md:my-3 lg:my-6"
+        class="flex flex-col md:flex-row justify-center md:justify-between items-center mx-2 lg:mx-8 lg:mx-15 my-1 md:my-3 lg:my-6"
       >
         <img class="inline h-10" src="src/icons/logo.png" alt="logo" />
         <ul class="flex gap-x-12 md:gap-x-6 font-roboto">
@@ -36,15 +40,15 @@
       </nav>
       <!-- banner section  -->
       <section
-        class="mx-2 md:mx-10 lg:mx-40 md:flex md:flex-row justify-center items-center"
+        class="mx-2 lg:mx-8 lg:mx-15 md:flex md:flex-row justify-center items-center"
       >
-        <div class="w-full md:w-1/2 text-center md:text-left">
+        <div class="w-full md:w-1/2">
           <h1 class="uppercase text-6xl font-bebas mb-2">
             <span class="text-[#FABE4C]">Be the penguins</span>
             <br />
             <span class="text-[#363958]">of winter</span>
           </h1>
-          <p class="font-roboto mb-2 mx-16 md:mx-auto">
+          <p class="font-roboto my-3 w-4/5">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
             cupiditate doloribus consequatur.
           </p>
@@ -69,11 +73,11 @@
           </button>
         </div>
         <div class="w-full md:w-1/2 flex justify-center">
-          <img src="src/images/model.png" alt="" class="block w-2/3" />
+          <img src="src/images/model.png" alt="" class="block w-5/6" />
         </div>
       </section>
     </header>
-    <main>
+    <main class="mx-2 lg:mx-8 lg:mx-15 my-1 md:my-3 lg:my-6">
       <!-- women jacket section -->
       <section class="mx-2 my-5">
         <h2 class="uppercase text-center text-4xl font-bebas my-5">
@@ -119,7 +123,7 @@
                 </button>
               </div>
             </div>
-            <div class="rounded-3xl shadow-xl m-5 p-5">
+            <div class="rounded-3xl shadow-xl m-5 md:m-0 p-5">
               <div
                 class="bg-[#F1F1F1] rounded-3xl m-5 p-10 flex justify-center items-center"
               >
@@ -157,7 +161,7 @@
                 </button>
               </div>
             </div>
-            <div class="rounded-3xl shadow-xl m-5 p-5">
+            <div class="rounded-3xl shadow-xl m-5 md:m-0 p-5">
               <div
                 class="bg-[#F1F1F1] rounded-3xl m-5 p-10 flex justify-center items-center"
               >
@@ -243,7 +247,7 @@
                 </button>
               </div>
             </div>
-            <div class="rounded-3xl shadow-xl m-5 p-5">
+            <div class="rounded-3xl shadow-xl m-5 md:m-0 p-5">
               <div
                 class="bg-[#F1F1F1] rounded-3xl m-5 p-10 flex justify-center items-center"
               >
@@ -281,7 +285,7 @@
                 </button>
               </div>
             </div>
-            <div class="rounded-3xl shadow-xl m-5 p-5">
+            <div class="rounded-3xl shadow-xl m-5 md:m-0 p-5">
               <div
                 class="bg-[#F1F1F1] rounded-3xl m-5 p-10 flex justify-center items-center"
               >
@@ -323,6 +327,52 @@
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer
+      class="flex gap-8 mx-2 lg:mx-8 lg:mx-15 my-1 md:my-3 lg:my-6 justify-center items-center flex-col-reverse lg:flex-row"
+    >
+      <div class="w-full lg:w-1/2">
+        <div
+          class="flex flex-col lg:flex-row justify-center items-center gap-5 rounded-3xl shadow-xl m-3 p-5"
+        >
+          <div class="w-[100px]">
+            <img class="w-full" src="src/icons/house.png" alt="" />
+          </div>
+          <div class="text-center lg:text-left">
+            <h3 class="text-xl font-bold">Find the Perfect Fit</h3>
+            <p>
+              Everybody is different, which is why we offer styles for everybody
+            </p>
+          </div>
+        </div>
+        <div
+          class="flex flex-col lg:flex-row justify-center items-center gap-5 rounded-3xl shadow-xl m-3 p-5"
+        >
+          <div class="w-[100px]">
+            <img class="w-full" src="src/icons/box.png" alt="" />
+          </div>
+          <div class="text-center lg:text-left">
+            <h3 class="text-xl font-bold">Free Exchange</h3>
+            <p>One of the many reasons you can shop with peace of mind.</p>
+          </div>
+        </div>
+        <div
+          class="flex flex-col lg:flex-row justify-center items-center gap-5 rounded-3xl shadow-xl m-3 p-5"
+        >
+          <div class="w-[100px]">
+            <img class="w-full" src="src/icons/question.png" alt="" />
+          </div>
+          <div class="text-center lg:text-left">
+            <h3 class="text-xl font-bold">Contact Our Seller</h3>
+            <p>
+              They are here to help you. That's quite literally what we pay them
+              for.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="w-full lg:w-1/2">
+        <img class="w-full" src="src/images/shopping.png" alt="" />
+      </div>
+    </footer>
   </body>
 </html>
